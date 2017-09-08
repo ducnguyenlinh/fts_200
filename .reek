@@ -1,0 +1,15 @@
+FeatureEnvy:
+  enabled: false
+
+IrresponsibleModule:
+  enabled: false
+
+exclude_paths:
+  - 'vendor'
+  - 'db/migrate'
+
+Attribute:
+  enabled: false
+
+UncommunicativeModuleName:
+  enabled: false
