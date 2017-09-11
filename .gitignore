@@ -26,3 +26,5 @@
 /config/secrets.yml
 .framgia-ci-result.temp.yml
 /.framgia-ci-reports/*
+/test/*
+!/test/*/.keep
