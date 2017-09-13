@@ -21,6 +21,8 @@ gem "jbuilder", "~> 2.5"
 gem "bootstrap-sass", "3.3.7"
 gem "config"
 gem "figaro"
+gem "devise", "~> 4.3"
+
 group :development do
   gem "byebug", platform: :mri
 end
