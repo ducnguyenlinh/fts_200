@@ -3,7 +3,12 @@ exclude:
   - "app/assets/stylesheets/application.scss"
   - "vendor/assets/**"
   - "*.css"
+  - "app/assets/stylesheets/imagehover.min.scss"
 linters:
   StringQuotes:
     enabled: true
     style: double_quotes
+  ImportantRule:
+    enabled: false
+  QualifyingElement:
+    enabled: false
