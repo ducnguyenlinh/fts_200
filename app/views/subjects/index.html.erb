@@ -1,0 +1,34 @@
+<div class="subject-index" >
+  <div class="jumbotron col-xs-12">
+    <div class="col-xs-10 col-xs-offset-1">
+      <img class="col-xs-4" src= <%= @course.link_image %>>
+      <div class="text-left col-xs-8 ">
+        <h1><%= t "the" %> <%= @course.name %> </h1>
+        <p><%= @course.description %></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2><%= t "sub_of_cou" %></h2>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th><%= t "sub_name" %></th>
+          <th><%= t "descrip" %></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @subject.each do |s| %>
+        <tr>
+          <td><%= s.name %></td>
+          <td><%= s.description %>
+            <%= link_to t("learn"), subject_path(s),
+              class: "btn btn-primary glyphicon glyphicon-education pull-right"%>
+          </td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

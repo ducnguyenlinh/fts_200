@@ -1,0 +1,30 @@
+<div class="jumbotron">
+
+  <div class="text-center">
+    <h1><%= t "we_have" %> <%= @courses.size %> <%= t "cou" %></h1>
+    <p><%= t "click_cou" %></p>
+  </div>
+
+</div>
+
+<div class="container">
+  <h2><%= t "list_cou" %></h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th><%= t "cou_name" %></th>
+        <th><%= t "total_time" %></th>
+        <th><%= t "descrip" %></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @courses.each do |c| %>
+      <tr>
+        <td><%= link_to c.name, course_subjects_path(c) %></td>
+        <td><%= c.total_time %></td>
+        <td><%= c.description %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
