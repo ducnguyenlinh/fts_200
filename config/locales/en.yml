@@ -1,3 +1,41 @@
 en:
   app:
     title: "Fts200"
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Magnam atque, nostrum veniam consequatur libero fugiat, similique quis."
+    rails: "Ruby on rails"
+    android: "Android"
+    php: "PHP"
+    javaSpring: "Java Spring"
+    iOs: "iOS"
+    javascript: "Javascript"
+  about:
+    title: "About"
+  course:
+    title: "Course"
+  member:
+    title: "Member"
+  devise:
+    confirmations:
+      title: "Resend confirmation instructions"
+    registrations:
+      edit: "Edit"
+      update: "Update"
+      cancel: "Cancel my account"
+    email:
+      title: "Email"
+    login:
+      title: "Log in"
+    signup:
+      title: "Sign up"
+      need_account: "Need account? Sign up"
+    signin:
+     title: "Sign in"
+    password:
+      title: "Password"
+      forgot: "Forgot your password?"
+      change: "Change your password"
+    confirmation:
+      confirmable: "Didn't receive confirmation instructions?"
+    sign_in_with: "Sign in with"
+
