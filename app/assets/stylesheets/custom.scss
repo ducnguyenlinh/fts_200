@@ -1,10 +1,13 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
 $color-gray: #818181;
 $color-mine-shaft: #303030;
 $color-pomegranate: #f4511e;
 $color-white: #fff;
+$white-milk: #d8c8cc;
+$yellow-turmeric: #a79f2f;
+$gray-ash: #556270;
+$pink-white: #ff6b6b;
 
 body {
   color: $color-gray;
@@ -67,4 +70,29 @@ body {
 
 .dropdown-menu {
   background-color: $color-pomegranate;
+}
+
+.subject-index {
+  .jumbotron {
+    background: linear-gradient(to right, $gray-ash, $pink-white);
+    color: $white-milk;
+
+    p {
+      font-style: italic;
+      font-weight: 100;
+    }
+
+    h1 {
+      font-size: 50px;
+    }
+
+    strong {
+      color: $yellow-turmeric;
+      font-size: 25px;
+    }
+  }
+
+  img {
+    width: 200px;
+  }
 }
