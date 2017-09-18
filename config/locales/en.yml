@@ -14,7 +14,7 @@ en:
   course:
     title: "Course"
   member:
-    title: "Member"
+    title: "Members"
   devise:
     confirmations:
       title: "Resend confirmation instructions"
@@ -35,6 +35,7 @@ en:
       title: "Password"
       forgot: "Forgot your password?"
       change: "Change your password"
+      minimum: "characters minimum"
     confirmation:
       confirmable: "Didn't receive confirmation instructions?"
     sign_in_with: "Sign in with"
@@ -61,4 +62,19 @@ en:
   welcome_to_cou: "Welcom to our course!"
   show_all_user: "Show All User"
   learn_web_dep: "Learn web development with rails"
-
+  users:
+    index:
+      title: "All users"
+    show:
+      title: "Profile"
+      name: "Name: "
+      email: "Email"
+      back: "Back"
+    logout:
+      title: "Log out"
+    edit:
+      unhappy: "Unhappy?"
+    update_success: "Profile updated"
+    cancel_account: "Cancel my account"
+    logged_in_danger: "Please log in."
+  danger: "Email address not found"

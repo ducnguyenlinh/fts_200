@@ -28,3 +28,4 @@
 /.framgia-ci-reports/*
 /test/*
 !/test/*/.keep
+/public/uploads/*

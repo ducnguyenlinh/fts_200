@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+      <div class="panel panel-default session">
+        <div class="panel-heading">
+          <h2 class="text-center"><%= t "users.show.title" %></h2>
+        </div>
+        <div class="panel-body">
+          <div class="col-sm-6">
+            <p>
+              <% if @user.avatar? %>
+                <%= image_tag @user.avatar.thumb.url %>
+              <% end %>
+            </p>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="col-sm-12">
+              <p>
+                <% if @user.name? %>
+                  <strong><%= t "users.show.name" %> </strong>
+                  <%= @user.name %>
+                <% end %>
+              </p>
+            </div>
+
+            <div class="col-sm-12 ">
+              <p>
+                <strong><%= t "users.show.email" %></strong>
+                <%= @user.email %>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-sm-12">
+            <%= link_to t("devise.registrations.edit"), edit_user_registration_path %> <br />
+            <%= link_to t("users.show.back"), :back %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
