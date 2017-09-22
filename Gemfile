@@ -8,8 +8,6 @@ end
 gem "rails", "~> 5.1.3"
 gem "bcrypt", "~> 3.1.11"
 gem "faker", "~> 1.7.3"
-gem "will_paginate", "3.1.5"
-gem "bootstrap-will_paginate", "1.0.0"
 gem "sqlite3"
 gem "puma", "~> 3.0"
 gem "sass-rails", "~> 5.0"
@@ -22,6 +20,11 @@ gem "bootstrap-sass", "3.3.7"
 gem "config"
 gem "figaro"
 gem "devise", "~> 4.3"
+gem "carrierwave", "~> 1.1"
+gem "mini_magick", "~> 4.3"
+gem "kaminari"
+gem "ransack"
+gem "bootstrap-kaminari-views"
 
 group :development do
   gem "byebug", platform: :mri

@@ -1,5 +1,6 @@
 $color-white: #fff;
 $color-emerald: #5fcf80;
+$color-alto: #d9d9d9;
 
 .section-padding {
   height: 87vh;
@@ -53,5 +54,29 @@ $color-emerald: #5fcf80;
   figcaption {
     background-color: $color-emerald;
     height: 50%;
+  }
+}
+
+hr {
+  border-style: inset;
+  border-width: 1px;
+  display: block;
+  margin-bottom: .5em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: .5em;
+}
+
+.round-image-50 {
+  background-color: $color-white;
+  border: 1px solid $color-alto;
+  border-radius: 25px;
+  height: 50px;
+  overflow: hidden;
+  text-align: center;
+  width: 50px;
+
+  img {
+    width: 100%;
   }
 }

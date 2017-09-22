@@ -16,8 +16,14 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"> <%= t "about.title" %></a></li>
-        <li> <%= link_to t("course.title"), courses_path %></li>
-        <li><a href="#"> <%= t "member.title" %></a></li>
+        <li>
+          <%= link_to t("course.title"), courses_path %>
+        </li>
+        <% if user_signed_in? %>
+          <li>
+            <%= link_to t("member.title"), users_path %>
+          </li>
+        <% end %>
 
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">
@@ -26,33 +32,43 @@
           <ul class="dropdown-menu">
             <% if user_signed_in? %>
               <li>
-                <%= link_to root_path do %>
-                  <span class="glyphicon glyphicon-user"></span>Profile
+                <%= link_to user_path(current_user) do %>
+                  <span class="glyphicon glyphicon-user"></span>
+                  <%= t "users.show.title" %>
                 <% end %>
               </li>
               <li>
                 <%= link_to destroy_user_session_path, method: :delete do %>
-                  <span class="glyphicon glyphicon-log-out"></span>Logout
+                  <span class="glyphicon glyphicon-log-out"></span>
+                  <%= t "users.logout.title" %>
                 <% end %>
               </li>
             <% else %>
               <li>
                 <%= link_to new_user_registration_path do %>
-                  <span class="glyphicon glyphicon-new-window"></span>Sign up
+                  <span class="glyphicon glyphicon-new-window"></span>
+                  <%= t "devise.signup.title" %>
                 <% end %>
               </li>
               <li>
                 <%= link_to new_user_session_path do %>
-                  <span class="glyphicon glyphicon-log-in"></span>Log in
+                  <span class="glyphicon glyphicon-log-in"></span>
+                  <%= t "devise.login.title" %>
                 <% end %>
               </li>
             <% end %>
           </ul>
 
           <% if user_signed_in? %>
-            <li>
-              <a class="glyphicon glyphicon-user" href="#"></a>
-            </li>
+            <% if current_user.avatar.present? %>
+              <li class="round-image-50">
+                <%= image_tag current_user.avatar.thumb.url %>
+              </li>
+            <%else %>
+              <li>
+                <a class="glyphicon glyphicon-user" href="#"></a>
+              </li>
+            <% end %>
           <%end %>
         </li>
       </ul>

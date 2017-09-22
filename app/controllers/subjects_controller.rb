@@ -5,7 +5,7 @@ class SubjectsController < ApplicationController
   attr_reader :course
 
   def index
-    @subject = course.subjects.all
+    @subjects = course.subjects.all
   end
 
   def show; end
