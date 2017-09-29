@@ -17,9 +17,10 @@ body {
 }
 
 .jumbotron {
-  background-color: $color-mine-shaft;
-  color: $color-pomegranate;
+  background-color: $color-pomegranate;
+  color: $color-mine-shaft;
   font-family: Montserrat, sans-serif;
+  margin-top: 15px;
   padding: 100px 25px;
 }
 

@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+      <div class="panel panel-default session">
+        <div class="panel-heading">
+          <h2 class="text-center"><%= "Result" %></h2>
+        </div>
+
+        <div class="panel-body">
+          <% if @result.is_pass? == true %>
+            <h3>Congratulation. You are passed</h3>
+            <h4>Score: <%= @result.score %></h4>
+            <%= link_to "Finish",course_subjects_path(@subject.course), class: "btn btn-primary btn-block" %>
+          <% else %>
+            <h3>Sorry. You are not passed</h3>
+            <h4>Score: <%= @result.score %></h4>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

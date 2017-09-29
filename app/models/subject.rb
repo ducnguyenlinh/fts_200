@@ -3,4 +3,5 @@ class Subject < ApplicationRecord
 
   has_many :histories
   has_many :users, through: :user_subjects
+  has_many :tests
 end

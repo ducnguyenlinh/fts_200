@@ -1,10 +1,8 @@
 <div class="jumbotron">
-
   <div class="text-center">
     <h1><%= t "we_have" %> <%= @courses.size %> <%= t "cou" %></h1>
     <p><%= t "click_cou" %></p>
   </div>
-
 </div>
 
 <div class="container">
@@ -18,12 +16,18 @@
       </tr>
     </thead>
     <tbody>
-      <% @courses.each do |c| %>
-      <tr>
-        <td><%= link_to c.name, course_subjects_path(c) %></td>
-        <td><%= c.total_time %></td>
-        <td><%= c.description %></td>
-      </tr>
+      <% @courses.each do |course| %>
+        <tr>
+          <td><%= course.name %></td>
+          <td><%= course.total_time %></td>
+          <td><%= course.description %> </td>
+          <td>
+            <%= form_for UserCourse.create do |f|%>
+              <%= f.hidden_field :course_id, value: course.id %>
+              <%= f.submit(t("learn"), class: "btn btn-primary btn-block glyphicon glyphicon-education pull-right") %>
+            <%end %>
+          </td>
+        </tr>
       <% end %>
     </tbody>
   </table>

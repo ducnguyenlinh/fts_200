@@ -9,8 +9,21 @@
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
-//
-//= require bootstrap
+
+// require jquery
+//= require jquery_ujs
 //= require rails-ujs
+//= require bootstrap
 //= require turbolinks
+//= require timeago/jquery.timeago
 //= require_tree .
+
+document.addEventListener("turbolinks:load", function() {
+    $(".content").hide();
+
+    $(".start-btn").click(function(){
+        $(".content").show();
+    });
+
+    $("abbr.timeago").timeago();
+})

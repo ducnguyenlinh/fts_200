@@ -1,12 +1,22 @@
 Course.create!([
   {name: "Rails Tutorial",
-  total_time: 20,
+  total_time: 10,
   description: "You will make sample app",
   link_image: "https://i.imgur.com/SYiCyRX.png"},
   {name: "Rails Tutorial 2",
-  total_time: 30,
+  total_time: 20,
   description: "You will make advance app",
-  link_image: "https://i.imgur.com/Tx8M3jJ.png"}
+  link_image: "https://i.imgur.com/Tx8M3jJ.png"},
+  {name: "Rails Tutorial 3",
+   total_time: 30,
+   description: "You will make advance app",
+   link_image: "https://i.imgur.com/Tx8M3jJ.png"
+  },
+  {name: "Rails Tutorial 4",
+   total_time: 40,
+   description: "You will make advance app",
+   link_image: "https://i.imgur.com/Tx8M3jJ.png"
+  }
 ])
 
 Subject.create!([
@@ -19,5 +29,25 @@ Subject.create!([
   {name: "chapter 4", course_id: 1, start_time: 3,
     description: "Rails-flavored Ruby"},
   {name: "chapter 5", course_id: 1, start_time: 6,
-    description: "Filling in the layout"}
+    description: "Filling in the layout"},
+  {name: "chapter 6", course_id: 2, start_time: 3,
+   description: "From zero to deploy"},
+  {name: "chapter 7", course_id: 2, start_time: 3,
+   description: "A toy app"},
+  {name: "chapter 8", course_id: 2, start_time: 5,
+   description: "Mostly static pages"},
+  {name: "chapter 9", course_id: 2, start_time: 3,
+   description: "Rails-flavored Ruby"},
+  {name: "chapter 10", course_id: 2, start_time: 6,
+   description: "Filling in the layout"},
+  {name: "chapter 11", course_id: 3, start_time: 3,
+   description: "From zero to deploy"},
+  {name: "chapter 12", course_id: 3, start_time: 3,
+   description: "A toy app"},
+  {name: "chapter 13", course_id: 3, start_time: 5,
+   description: "Mostly static pages"},
+  {name: "chapter 14", course_id: 3, start_time: 3,
+   description: "Rails-flavored Ruby"},
+  {name: "chapter 15", course_id: 3, start_time: 6,
+   description: "Filling in the layout"}
 ])

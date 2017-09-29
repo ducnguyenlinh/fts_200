@@ -29,3 +29,4 @@
 /test/*
 !/test/*/.keep
 /public/uploads/*
+/db/seeds.rb

@@ -1,0 +1,17 @@
+<%= link_to t("users.show.back"), course_subject_reports_path(@course, @subject)%><hr/>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+      <div class="panel panel-default session">
+        <div class="panel-heading">
+          <h3 class="text-center"> Report </h3>
+        </div>
+        <div class="panel-body">
+          <%= @report.time %> <hr/>
+          <%= @report.content %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

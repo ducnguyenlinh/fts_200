@@ -1,0 +1,14 @@
+<%= form_for Test.new, url: course_subject_tests_path(@course,@subject), method: :post  do |f| %>
+    <%= f.hidden_field :test_id, value: @test.id %>
+    <%= f.hidden_field :score, value: @score %>
+    <% @questions.each do |question| %><hr/>
+    <h3><%= question.question_content %></h3>
+    <% question.answers.each do |answer| %>
+      <input type="radio" name="questions[<%= question.id %>]"
+        value="<%= answer.id %>"> <%= answer.answer_content %>
+      <br>
+    <% end %>
+  <% end %>
+
+  <button><%= t "test.submit"%> </button>
+<% end %>

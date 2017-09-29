@@ -7,7 +7,7 @@
 <% end -%>
 
 <%- if devise_mapping.confirmable? && controller_name != "confirmations" %>
-  <%= link_to t("devise.confirmation.confirmable"), new_confirmation_path(resource_name) %><br />
+  <%= link_to t("devise.confirmation.confirmable"), new_user_confirmation_path(resource_name) %><br />
 <% end -%>
 
 <%- if devise_mapping.omniauthable? %>

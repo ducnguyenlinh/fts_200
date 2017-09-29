@@ -15,6 +15,9 @@ en:
     title: "Course"
   member:
     title: "Members"
+  history:
+    title: "History"
+    all_history: "All History"
   devise:
     confirmations:
       title: "Resend confirmation instructions"
@@ -78,3 +81,22 @@ en:
     cancel_account: "Cancel my account"
     logged_in_danger: "Please log in."
   danger: "Email address not found"
+  report:
+    title: "Report"
+    all_report: "All Report"
+    add: "Add"
+    time_at: "Time at"
+    delete: "Delete"
+    show: "Show"
+    confirm: "Are you sure?"
+    success: "Success"
+  subject:
+    title: "Subject"
+    start: "Start"
+    see_report: "See Report"
+    write_report: "Write Report"
+    finish: "Finish"
+    error: "Error"
+  test:
+    title: "Test"
+    submit: "Submit"
